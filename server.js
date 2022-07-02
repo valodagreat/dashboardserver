@@ -12,8 +12,8 @@ const db = Knex({
     client: 'pg',
     connection: {
     host : '127.0.0.1',
-    user : 'postgres',
-    password : 'vals2s',
+    user : process.env.user,
+    password : process.env.pass,
     database : 'dashboard'
 }
 });
